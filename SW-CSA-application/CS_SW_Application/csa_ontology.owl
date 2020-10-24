@@ -1,0 +1,461 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/desia/ontologies/2020/1/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/desia/ontologies/2020/1/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/desia/ontologies/2020/1/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#executedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#executedOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Target"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#exploits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#exploits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Tools"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Vulnerability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#toAchive -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#toAchive">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Target"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#UnauthorizedResult"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#toProduce -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#toProduce">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Vulnerability"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#hasDamageCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#hasDamageCost">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#UnauthorizedResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Vulnerability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#hasStarted -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#hasStarted">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#hasType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#hasType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Tools"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Account">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Target"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CyberSecurityAttack"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#executedOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Target"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#hasStarted"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Bypass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Bypass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Computer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Computer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Target"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Configuration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Configuration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Vulnerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Copy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Copy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CorruptionOfInformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CorruptionOfInformation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#UnauthorizedResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CyberSecurityAttack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CyberSecurityAttack">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Target"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Delete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Delete">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Vulnerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#DisclosurOfInformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#DisclosurOfInformation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#UnauthorizedResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#DoS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#DoS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#UnauthorizedResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Implementation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Implementation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Vulnerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#IncreasedAccess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#IncreasedAccess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#UnauthorizedResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#InformationExchange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#InformationExchange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Modify -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Modify">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Target"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Program -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Program">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Read -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Read">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Script -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Script">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Spoof -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Spoof">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Steal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Steal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Target -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Target">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CyberSecurityAttack"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#toAchive"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#UnauthorizedResult"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CyberSecurityAttack"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#exploits"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Vulnerability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#hasType"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#UnauthorizedResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#UnauthorizedResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CyberSecurityAttack"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#hasDamageCost"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#UserCommand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#UserCommand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Vulnerability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Vulnerability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CyberSecurityAttack"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#toProduce"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CorruptionOfInf1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CorruptionOfInf1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CyberSecurityAttack"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#UnauthorizedResult"/>
+        <untitled-ontology-5:hasDamageCost rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0E7</untitled-ontology-5:hasDamageCost>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#DeleteAction1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#DeleteAction1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CyberSecurityAttack"/>
+        <untitled-ontology-5:executedOn rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#DeletedData1"/>
+        <untitled-ontology-5:hasStarted rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-26T21:32:52</untitled-ontology-5:hasStarted>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#DeletedData1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#DeletedData1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CyberSecurityAttack"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Target"/>
+        <untitled-ontology-5:toAchive rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CorruptionOfInf1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#UserCommand1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#UserCommand1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CyberSecurityAttack"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Tools"/>
+        <untitled-ontology-5:exploits rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#VN1015"/>
+        <untitled-ontology-5:hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sql Injection command</untitled-ontology-5:hasType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#VN1015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#VN1015">
+        <rdf:type rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#CyberSecurityAttack"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#Vulnerability"/>
+        <untitled-ontology-5:toProduce rdf:resource="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5#DeleteAction1"/>
+        <untitled-ontology-5:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SQL Injection vulnerability</untitled-ontology-5:hasName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

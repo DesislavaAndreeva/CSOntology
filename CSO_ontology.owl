@@ -1,0 +1,454 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.semanticweb.org/desia/ontologies/2020/0/untitled-ontology-5"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="#DeleteAction1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Delete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnauthorizedResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#executedOn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DisclosurOfInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#toAchive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tools"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Configuration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Program"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Steal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#toProduce"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CorruptionOfInf1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Implementation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationExchange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DoS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vulnerability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CorruptionOfInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bypass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Design"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDamageCost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Account"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStarted"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncreasedAccess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exploits"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VN1015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Copy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Script"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Modify"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CyberSecurityAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Target"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spoof"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DeletedData1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Read"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserCommand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UserCommand1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Account"/>
+        <Class IRI="#Target"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <Class IRI="#CyberSecurityAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#executedOn"/>
+            <Class IRI="#Target"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasStarted"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bypass"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer"/>
+        <Class IRI="#Target"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Configuration"/>
+        <Class IRI="#Vulnerability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Copy"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CorruptionOfInformation"/>
+        <Class IRI="#UnauthorizedResult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CyberSecurityAttack"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data"/>
+        <Class IRI="#Target"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Delete"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Design"/>
+        <Class IRI="#Vulnerability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisclosurOfInformation"/>
+        <Class IRI="#UnauthorizedResult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DoS"/>
+        <Class IRI="#UnauthorizedResult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Implementation"/>
+        <Class IRI="#Vulnerability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncreasedAccess"/>
+        <Class IRI="#UnauthorizedResult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationExchange"/>
+        <Class IRI="#Tools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Modify"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Network"/>
+        <Class IRI="#Target"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Program"/>
+        <Class IRI="#Tools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Read"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Script"/>
+        <Class IRI="#Tools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spoof"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Steal"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Target"/>
+        <Class IRI="#CyberSecurityAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Target"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#toAchive"/>
+            <Class IRI="#UnauthorizedResult"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tools"/>
+        <Class IRI="#CyberSecurityAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tools"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#exploits"/>
+            <Class IRI="#Vulnerability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tools"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnauthorizedResult"/>
+        <Class IRI="#CyberSecurityAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnauthorizedResult"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasDamageCost"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserCommand"/>
+        <Class IRI="#Tools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulnerability"/>
+        <Class IRI="#CyberSecurityAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulnerability"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#toProduce"/>
+            <Class IRI="#Action"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulnerability"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#UnauthorizedResult"/>
+        <NamedIndividual IRI="#CorruptionOfInf1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Action"/>
+        <NamedIndividual IRI="#DeleteAction1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Target"/>
+        <NamedIndividual IRI="#DeletedData1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tools"/>
+        <NamedIndividual IRI="#UserCommand1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vulnerability"/>
+        <NamedIndividual IRI="#VN1015"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#executedOn"/>
+        <NamedIndividual IRI="#DeleteAction1"/>
+        <NamedIndividual IRI="#DeletedData1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#toAchive"/>
+        <NamedIndividual IRI="#DeletedData1"/>
+        <NamedIndividual IRI="#CorruptionOfInf1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#exploits"/>
+        <NamedIndividual IRI="#UserCommand1"/>
+        <NamedIndividual IRI="#VN1015"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#toProduce"/>
+        <NamedIndividual IRI="#VN1015"/>
+        <NamedIndividual IRI="#DeleteAction1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDamageCost"/>
+        <NamedIndividual IRI="#CorruptionOfInf1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.0E7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStarted"/>
+        <NamedIndividual IRI="#DeleteAction1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-26T21:32:52</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#UserCommand1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sql Injection command</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#VN1015"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SQL Injection</Literal>
+    </DataPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#toAchive"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#executedOn"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#exploits"/>
+        <Class IRI="#Tools"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#toAchive"/>
+        <Class IRI="#Target"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#toProduce"/>
+        <Class IRI="#Vulnerability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#executedOn"/>
+        <Class IRI="#Target"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#exploits"/>
+        <Class IRI="#Vulnerability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#toAchive"/>
+        <Class IRI="#UnauthorizedResult"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#toProduce"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDamageCost"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasStarted"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDamageCost"/>
+        <Class IRI="#UnauthorizedResult"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Vulnerability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStarted"/>
+        <Class IRI="#Action"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasType"/>
+        <Class IRI="#Tools"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDamageCost"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStarted"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

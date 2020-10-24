@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/collection-0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/commons-cli-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/commons-codec-1.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/commons-compress-1.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/commons-csv-1.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/commons-lang3-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/httpclient-4.5.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/httpclient-cache-4.5.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/httpcore-4.4.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jackson-annotations-2.9.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jackson-core-2.9.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jackson-databind-2.9.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jcl-over-slf4j-1.7.26.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-arq-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-base-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-cmds-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-core-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-dboe-base-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-dboe-index-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-dboe-storage-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-dboe-transaction-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-dboe-trans-data-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-iri-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-rdfconnection-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-shacl-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-shaded-guava-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-tdb2-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jena-tdb-3.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/jsonld-java-0.12.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/libthrift-0.12.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/slf4j-api-1.7.26.jar"/>
+	<classpathentry kind="lib" path="C:/Users/desia/Downloads/jar_files (4)/slf4j-log4j12-1.7.26.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
